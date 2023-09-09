@@ -1,0 +1,234 @@
+.sidebar-main-wrapper {
+    height: 100%;
+    width: 16rem;
+    background: #202A38;
+  
+    .sidebar-wrapper {
+      position: fixed;
+      width: 16rem;
+      overflow: auto;
+      visibility: hidden;
+      max-height: 100vh;
+    margin-top: 40px;
+
+  
+      .sidebar-container {
+        height: 100%;
+        padding: 0.7rem 0rem 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: baseline;
+  
+        .logo-container {
+          margin-bottom: 0.7rem;
+          width: 100%;
+          padding: 0 1.2rem;
+          display: flex;
+          position: relative;
+          min-height: 2.8rem;
+          cursor: pointer;
+          .mis-logo {
+            width: 6.2rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 1rem;
+          }
+        }
+  
+        .sidebar-user {
+          text-align: center;
+          width: 100%;
+          padding: 0 1.2rem;
+          display: flex;
+  
+          .details-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 0.7rem;
+          }
+  
+          img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin-bottom: 0.7rem;
+          }
+  
+          h5 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: white;
+            font-weight: normal;
+            margin-bottom: 0rem;
+          }
+  
+          p {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #ffffff;
+            opacity: 48%;
+          }
+        }
+  
+        .sidebar-content-main-container {
+          width: 100%;
+          flex: 1;
+  
+          .sidebar-content {
+            padding-left: 0;
+  
+            .sidebar-nav-content {
+              a {
+                display: flex;
+                color: #c2c4cb;
+                align-items: center;
+                padding: 0.7rem 1.2rem;
+                cursor: pointer;
+                transition: 0.3s all ease-out;
+                text-decoration: none;
+  
+                span {
+                  display: block;
+                  margin-right: 1rem;
+                  font-size: 1.2rem;
+  
+                  img {
+                    vertical-align: baseline;
+                  }
+                }
+  
+                p {
+                  margin: 0;
+                }
+  
+                .sidebar-arrow {
+                  margin-right: 0;
+                  line-height: 1;
+                  vertical-align: middle;
+                  font-size: 0.75rem;
+  
+                  fa-icon.ng-fa-icon {
+                    transition: 0.3s all ease-out;
+                  }
+                }
+  
+                .sidebar-title {
+                  font-size: 0.75rem;
+                  font-weight: 300;
+                  font-family: "Montserrat", sans-serif;
+                  line-height: 1rem;
+                }
+  
+                .sidebar-title:hover {
+                  color: white;
+                }
+              }
+            }
+  
+            .sidebar-nav-content a:hover {
+              background-color: #1f2536;
+              color: white;
+            }
+  
+            .content-heading-wrapper {
+              font-size: 0.7rem;
+              color: #77C99D;
+              text-transform: uppercase;
+              font-weight: 400;
+              font-family: 'Montserrat', sans-serif;
+              letter-spacing: 1px;
+              margin: 0.7rem 0;
+              padding: 0 1.2rem;
+            }
+  
+            .sidebar-common-content {
+              list-style: none;
+              padding-left: 0;
+  
+              .submenu li {
+                padding-left: 2.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  
+  ul li+.submenu {
+    display: none;
+  }
+  
+  ul li.active+.submenu {
+    display: block;
+    list-style: none;
+  }
+  
+  .sidebar-arrow fa-icon.ng-fa-icon.active {
+    transform: rotate(90deg);
+  }
+  
+  ul.nav.submenu li a {
+    display: flex;
+    color: #c2c4cb;
+    align-items: center;
+    padding: 0.3rem 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease-out;
+    text-decoration: none;
+    font-size: 0.75rem;
+  }
+  
+  li.sidebar-nav-content a {
+    position: relative;
+  }
+  
+  li.sidebar-nav-content a .sidebar-arrow {
+    margin: 0;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    transition: 0.3s all ease-out;
+  }
+  
+  li.sidebar-nav-content.active .sidebar-arrow {
+    transform: rotate(90deg);
+    transition: 0.3s all ease-out;
+  }
+  
+  li.sidebar-nav-content.active {
+    background-color: rgba(119, 201, 157, 0.1);
+    border-left: 0.3rem solid #77C99D;
+  
+    a {
+      color: white;
+    }
+  }
+  
+  .line-container {
+    border: 1px solid #727373;
+    width: 12.5rem;
+    margin: 0.3rem 0rem 1.2rem 1.5rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #77C99D;
+    position: absolute;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #77C99D;
+  }
+  
+  li.nav-item.active {
+    background-color: #6a6e77;
+  }
+  
+  li.sidebar-nav-content.active li {
+    color: white;
+  }

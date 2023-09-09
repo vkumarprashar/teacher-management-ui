@@ -1,0 +1,12 @@
+.main-container-wrapper {
+  display: flex;
+  min-height: 100vh;
+  .header-wrapper {
+    flex: 1;
+    background-color: #ebecf3;
+    width: calc(100% - 16rem);
+    .main-menu-wrapper {
+      padding: 0 1.8rem 1.8rem;
+    }
+  }
+}

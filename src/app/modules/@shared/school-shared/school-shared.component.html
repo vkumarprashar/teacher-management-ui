@@ -1,0 +1,13 @@
+<div>
+    <div class="main-container-wrapper">
+      <div class="sidebar-wrapper">
+        <app-school-sidebar *ngIf="toggleBtn.isOpen"> </app-school-sidebar>
+      </div>
+      <div class="header-wrapper">
+        <app-header></app-header>
+        <div class="main-menu-wrapper">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>

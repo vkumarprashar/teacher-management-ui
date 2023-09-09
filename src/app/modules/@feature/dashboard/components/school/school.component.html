@@ -1,0 +1,192 @@
+<form [formGroup]="addNewSchoolForm" (ngSubmit)="onSubmitSchoolForm()">
+    <div class="form-item-container">
+        <div class="form-item">
+            <div class="head">
+                <span>SCHOOL NAME</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="School Name" formControlName="schoolName" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['schoolName'].hasError('required') &&
+            addNewSchoolForm.controls['schoolName'].touched">
+                Industry Name is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>PRINCIPAL NAME</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Principal Name" formControlName="principalName" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['principalName'].hasError('required') &&
+            addNewSchoolForm.controls['principalName'].touched">
+                Principal Name is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>PRINCIPAL EMAIL</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Principal Email" formControlName="principalEmail" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['principalEmail'].hasError('required') &&
+            addNewSchoolForm.controls['principalEmail'].touched">
+                Principal Email is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>PRINCIPAL CONTACT</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Principal Contact" formControlName="principalContact" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['principalContact'].hasError('required') &&
+            addNewSchoolForm.controls['principalContact'].touched">
+                Principal Conatact is required
+            </span>
+        </div>
+      
+    </div>
+    <div class="form-item-container">
+    <div class="form-item">
+        <div class="head">
+            <span>AFFILIATED TO</span>
+        </div>
+        <div class="input">
+            <input class="name" type="text" placeholder="Affiliated To" formControlName="affiliatedTo" />
+        </div>
+        <span class="text-danger" *ngIf="
+        addNewSchoolForm.controls['affiliatedTo'].hasError('required') &&
+        addNewSchoolForm.controls['affiliatedTo'].touched">
+            AFFILIATED To is required
+        </span>
+    </div>
+    </div>
+    <div class="point">
+    <span>POINT OF CONTACT </span>
+    </div>
+    <div class="form-item-container">
+        <div class="form-item">
+            <div class="head">
+                <span>NAME</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Name" formControlName="name2" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['name2'].hasError('required') &&
+            addNewSchoolForm.controls['name2'].touched">
+                Name is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Contact Number</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Contact Number" formControlName="number2" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['number2'].hasError('required') &&
+            addNewSchoolForm.controls['number2'].touched">
+                Number is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Whatsapp Number</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Whatsapp Number" formControlName="wanumber2" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['wanumber2'].hasError('required') &&
+            addNewSchoolForm.controls['wanumber2'].touched">
+                Number is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Email</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Email" formControlName="email2" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['email2'].hasError('required') &&
+            addNewSchoolForm.controls['email2'].touched">
+                Email is required
+            </span>
+        </div>
+        </div>
+        <div class="point">
+            <span>POINT OF CONTACT 2</span>
+            </div>
+            <div class="form-item-container">
+                <div class="form-item">
+                    <div class="head">
+                        <span>NAME</span>
+                    </div>
+                    <div class="input">
+                        <input class="name" type="text" placeholder="Name" formControlName="name" />
+                    </div>
+                    <span class="text-danger" *ngIf="
+                    addNewSchoolForm.controls['name'].hasError('required') &&
+                    addNewSchoolForm.controls['name'].touched">
+                        Name is required
+                    </span>
+                </div>
+                <div class="form-item">
+                    <div class="head">
+                        <span>Contact Number</span>
+                    </div>
+                    <div class="input">
+                        <input class="name" type="text" placeholder="Contact Number" formControlName="number" />
+                    </div>
+                    <span class="text-danger" *ngIf="
+                    addNewSchoolForm.controls['number'].hasError('required') &&
+                    addNewSchoolForm.controls['number'].touched">
+                        Number is required
+                    </span>
+                </div>
+                <div class="form-item">
+                    <div class="head">
+                        <span>Whatsapp Number</span>
+                    </div>
+                    <div class="input">
+                        <input class="name" type="text" placeholder="Whatsapp Number" formControlName="wanumber" />
+                    </div>
+                    <span class="text-danger" *ngIf="
+                    addNewSchoolForm.controls['wanumber'].hasError('required') &&
+                    addNewSchoolForm.controls['wanumber'].touched">
+                        Number is required
+                    </span>
+                </div>
+                <div class="form-item">
+                    <div class="head">
+                        <span>Email</span>
+                    </div>
+                    <div class="input">
+                        <input class="name" type="text" placeholder="Email" formControlName="email" />
+                    </div>
+                    <span class="text-danger" *ngIf="
+                    addNewSchoolForm.controls['email'].hasError('required') &&
+                    addNewSchoolForm.controls['email'].touched">
+                        Email is required
+                    </span>
+                </div>
+                </div>
+    <div class="button-wrapper">
+        <button 
+            class="save-btn btn btn-success" type="submit">
+            CREATE
+        </button>
+    </div>
+</form>

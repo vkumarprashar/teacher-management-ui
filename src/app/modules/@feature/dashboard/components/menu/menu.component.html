@@ -1,0 +1,34 @@
+<!-- Main Div -->
+<div class="main-container">
+
+  <!-- Button Div -->
+  <div class="buttons-container">
+    <ul>
+      <li class="nav-item" *ngFor="let menuList of menuLists">
+        <span class="nav-link toggle-menu-buttons " (click)="openMenuList(menuList)"
+          [ngClass]="{ active: selectedList === menuList }">{{ menuList }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Right Div -->
+  <!-- <div class="right-navbar-container" *ngFor="let leaveBalance of userLeaveBalance index as index ">
+    <span class="leave-balance-wrapper">{{leaveBalance.value}}</span>
+    <span class="leavetype-name-wrapper">{{leaveBalance.label}}</span>
+    <span *ngIf="index<4" class="containers-division">|</span>
+  </div> -->
+  <!-- Main Div Ends -->
+</div>
+
+<!-- Leave Request Div -->
+<div>
+  <ng-container *ngIf="selectedList === 'Create School'">
+    <app-school></app-school>
+  </ng-container>
+  <ng-container *ngIf="selectedList === 'Create Subject/Topics'">
+    <app-subject></app-subject>
+  </ng-container>
+  <ng-container *ngIf="selectedList === 'Create Teacher'">
+   <app-teacher></app-teacher>
+  </ng-container>
+</div>

@@ -1,0 +1,35 @@
+<div [formGroup]="addBilling">
+<div class="form-items ml-4">
+    <!-- <div class="heading-text-wrapper">
+        <span>TEACHER</span>
+    </div> -->
+    <mat-form-field class="input-wrapper">
+        <mat-label>Teacher Name</mat-label>
+        <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="teacherName">
+            <mat-option *ngFor="let teacher of teachers"
+                [value]="teacher.id">{{
+               teacher.name
+                }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <span class="text-danger" *ngIf="
+    addBilling.controls['teacherName'].hasError('required') &&
+    addBilling.controls['teacherName'].touched
+    "></span>
+
+    <mat-form-field>
+        <mat-label>Enter a date range</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Start date">
+          <input matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+</div>
+<div class="button-wrapper">
+    <button class="save-button btn btn-success" type="submit">Generate Billing</button>
+</div>
+
+</div>

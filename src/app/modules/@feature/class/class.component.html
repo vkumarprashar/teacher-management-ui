@@ -1,0 +1,131 @@
+
+<div class="main-container">
+    <form [formGroup]="addClass" (ngSubmit)="onSubmitClas()">
+        <div class="add-project-form-container">
+            <div class="project-form-wrapper">
+                <div class="form-items ml-4">
+                    <div class="heading-text-wrapper">
+                        <span>SCHOOL</span>
+                    </div>
+                    <mat-form-field class="input-wrapper">
+                        <mat-label>School Name</mat-label>
+                        <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="schoolName">
+                            <mat-option *ngFor="let school of schools"
+                                [value]="school.id">{{
+                               school.schoolName
+                                }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="
+                    addClass.controls['schoolName'].hasError('required') &&
+                    addClass.controls['schoolName'].touched
+                    "></span>
+                </div>
+                <div class="form-items ml-4">
+                    <div class="heading-text-wrapper">
+                        <span>TEACHER</span>
+                    </div>
+                    <mat-form-field class="input-wrapper">
+                        <mat-label>Teacher Name</mat-label>
+                        <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="teacherName">
+                            <mat-option *ngFor="let teacher of teachers"
+                                [value]="teacher.id">{{
+                               teacher.name
+                                }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="
+                    addClass.controls['teacherName'].hasError('required') &&
+                    addClass.controls['teacherName'].touched
+                    "></span>
+                </div>
+                <div class="form-items ml-4">
+                    <div class="heading-text-wrapper">
+                        <span>SUBJECT/TOPIC</span>
+                    </div>
+                    <mat-form-field class="input-wrapper">
+                        <mat-label>Subject Name</mat-label>
+                        <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="subjectName">
+                            <mat-option *ngFor="let subject of subjects"
+                                [value]="subject.id">{{
+                               subject.name
+                                }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <span class="text-danger" *ngIf="
+                    addClass.controls['subjectName'].hasError('required') &&
+                    addClass.controls['subjectName'].touched
+                    "></span>
+                </div>
+     
+            </div>
+            <div class="project-form-wrapper last">
+            <div class="form-items ml-4">
+                <div class="heading-text-wrapper">
+                    <span>START/END DATE</span>
+                </div>
+                  <mat-form-field>
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div class="form-items ml-4">
+                <div class="heading-text-wrapper">
+                    <span>START TIME</span>
+                </div>
+                <mat-form-field class="input-wrapper">
+                    <mat-label>Start Time</mat-label>
+                    <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="startAt">
+                        <mat-option *ngFor="let type of timeArray"
+                            [value]="type.text">{{
+                           type.text
+                            }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <span class="text-danger" *ngIf="
+                addClass.controls['startAt'].hasError('required') &&
+                addClass.controls['startAt'].touched
+                "></span>
+            </div>
+            <div class="form-items ml-4">
+                <div class="heading-text-wrapper">
+                    <span>END TIME</span>
+                </div>
+                <mat-form-field class="input-wrapper">
+                    <mat-label>End Time</mat-label>
+                    <mat-select disableOptionCentering panelClass="myPanelClass" formControlName="endAt">
+                        <mat-option *ngFor="let type of timeArray"
+                            [value]="type.text">{{
+                           type.text
+                            }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <span class="text-danger" *ngIf="
+                addClass.controls['endAt'].hasError('required') &&
+                addClass.controls['endAt'].touched
+                "></span>
+            </div>
+            <div class="form-items ml-4 ">
+                <div class="heading-text-wrapper">
+                    <span>TEAMS LINK</span>
+                </div>
+                <div class="inputs">
+                    <input class="name" type="text" placeholder="Team Link" formControlName="link" />
+                </div>
+                <span class="text-danger" *ngIf="
+                addClass.controls['link'].hasError('required') &&
+                addClass.controls['link'].touched">
+                    Team link is required
+                </span>
+            </div>
+            </div>
+
+        </div>
+        <div class="button-wrapper">
+            <button class="save-button btn btn-success" type="submit" [disabled]="!addClass.valid">CREATE</button>
+        </div>
+    </form>
+</div>

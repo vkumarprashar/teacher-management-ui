@@ -1,0 +1,176 @@
+<form [formGroup]="addNewTeacherForm" (ngSubmit)="onSubmitTeacherForm()">
+    <div class="form-item-container">
+        <div class="form-item">
+            <div class="head">
+                <span>NAME</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder=" Name" formControlName="teacherName" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewTeacherForm.controls['teacherName'].hasError('required') &&
+            addNewTeacherForm.controls['teacherName'].touched">
+                Teacher Name is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>EMAIL</span>
+            </div>
+            <div class="input">
+                <input class="name" type="email" placeholder="Email" formControlName="email" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewTeacherForm.controls['email'].hasError('required') &&
+            addNewTeacherForm.controls['email'].touched">
+                 Email is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>CONTACT</span>
+            </div>
+            <div class="input">
+                <input class="name" type="number" placeholder="Contact" formControlName="contact" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewTeacherForm.controls['contact'].hasError('required') &&
+            addNewTeacherForm.controls['contact'].touched">
+                 Contact is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>PANCARD Number</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="PANCARD Number" formControlName="pancard" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewTeacherForm.controls['pancard'].hasError('required') &&
+            addNewTeacherForm.controls['pancard'].touched">
+                 PANCARD Number is required
+            </span>
+        </div>
+      
+    </div>
+    <div class="form-item-container">
+    <div class="form-item">
+        <div class="head">
+            <span>RATE PER HOUR</span>
+        </div>
+        <div class="input">
+            <input class="name" type="number" placeholder="Rate Per Hour" formControlName="rate" />
+        </div>
+        <span class="text-danger" *ngIf="
+        addNewTeacherForm.controls['rate'].hasError('required') &&
+        addNewTeacherForm.controls['rate'].touched">
+            RATE PER HOUR is required
+        </span>
+    </div>
+
+    <div class="form-item">
+        <div class="head">
+            <span>QUALIFICATION</span>
+        </div>
+        <div class="input">
+            <input class="name" type="text" placeholder="Qualification" formControlName="qualification" />
+        </div>
+        <span class="text-danger" *ngIf="
+        addNewTeacherForm.controls['qualification'].hasError('required') &&
+        addNewTeacherForm.controls['qualification'].touched">
+        QUALIFICATION is required
+        </span>
+    </div>
+    <div class="form-item">
+        <div class="head">
+            <span>AADHAR NUMBER</span>
+        </div>
+        <div class="input">
+            <input class="name" type="text" placeholder="Aadhar Number" formControlName="aadhar" />
+        </div>
+        <span class="text-danger" *ngIf="
+        addNewTeacherForm.controls['aadhar'].hasError('required') &&
+        addNewTeacherForm.controls['aadhar'].touched">
+            Aadhar Number is required
+        </span>
+    </div>
+    </div>
+    <!-- <div class="point">
+    <span>POINT OF CONTACT</span>
+    </div> -->
+    <!-- <div class="form-item-container">
+        <div class="form-item">
+            <div class="head">
+                <span>NAME</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Name" formControlName="name" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['name'].hasError('required') &&
+            addNewSchoolForm.controls['name'].touched">
+                Name is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Contact Number</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Contact Number" formControlName="number" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['number'].hasError('required') &&
+            addNewSchoolForm.controls['number'].touched">
+                Number is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Whatsapp Number</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Whatsapp Number" formControlName="wanumber" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['wanumber'].hasError('required') &&
+            addNewSchoolForm.controls['wanumber'].touched">
+                Number is required
+            </span>
+        </div>
+        <div class="form-item">
+            <div class="head">
+                <span>Email</span>
+            </div>
+            <div class="input">
+                <input class="name" type="text" placeholder="Email" formControlName="email" />
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewSchoolForm.controls['email'].hasError('required') &&
+            addNewSchoolForm.controls['email'].touched">
+                Email is required
+            </span>
+        </div>
+        </div> -->
+        <div class="form-item2">
+            <div class="head">
+                <span>ADDRESS</span>
+            </div>
+            <div class="input">
+                <textarea cols="30" rows="30" class="textarea" type="text" formControlName="address"
+                    placeholder="Enter Complete Address"></textarea>
+            </div>
+            <span class="text-danger" *ngIf="
+            addNewTeacherForm.controls['address'].hasError('required') &&
+            addNewTeacherForm.controls['address'].touched">
+                ADDRESS is required
+            </span>
+        </div>
+    <div class="button-wrapper">
+        <button 
+            class="save-btn btn btn-success" type="submit">
+            CREATE
+        </button>
+    </div>
+</form>

@@ -1,1 +1,766 @@
-/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+.pi-home:before {
+  display: none;
+}
+.p-breadcrumb ul li:nth-child(2) {
+  display: none !important;
+}
+.mat-calendar {
+  font-family: "Roboto Condensed", sans-serif !important;
+  zoom: 1.16;
+}
+.mat-calendar-header {
+  padding: 8px 8px 0 8px;
+  background: whitesmoke !important;
+}
+// .mat-calendar-header,
+// .mat-calendar-content {
+//   zoom: 0.85;
+//   font-family: "Monteserrat", sans-serif !important;
+// }
+
+.mat-calendar {
+  background-color: white;
+}
+.pagination {
+  align-items: flex-end;
+  margin-left: 0 auto !important;
+  margin-right: 10px !important;
+  margin-top: 5px !important;
+}
+
+.pagination > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+  color: #5d38db;
+  border-radius: 8px;
+  margin-left: 8px;
+  font-size: 12px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 7px 64px 0 rgba(0, 0, 0, 0.07);
+}
+
+.page-item.active .page-link {
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: #5d38db;
+  box-shadow: 0 8px 14px 0 rgba(93, 56, 219, 0.45);
+}
+.p-breadcrumb {
+  margin-top: 20px;
+  width: fit-content;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.p-breadcrumb ul li.p-breadcrumb-chevron {
+  font-size: 13px;
+}
+.p-breadcrumb ul li .p-menuitem-link .p-menuitem-text {
+  color: #38A3A5;
+  font-family: "Lato";
+  font-size: medium;
+}
+
+.p-breadcrumb ul li:last-child .p-menuitem-text {
+  color: #979797;
+  pointer-events: none;
+}
+
+.p-breadcrumb ul li:last-child {
+  pointer-events: none;
+}
+
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+  background-color: #5d38db !important;
+  box-shadow: 0 8px 14px 0 rgba(93, 56, 219, 0.45);
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 4px 4px 0 0;
+  padding: 0.75em 0.75em 0 0.75em;
+  background: #ffffff;
+  border: 0.62px solid rgba(151, 151, 151, 0.202814);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.07);
+  border-radius: 3.72px;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.mat-form-field-underline {
+  display: none;
+}
+.mat-checkbox-inner-container {
+  height: 12px !important;
+  line-height: 0;
+  margin: auto;
+  margin-right: 3px !important;
+
+  width: 12px !important;
+}
+.my-custom-class{
+  background-color: #ffffff;
+  // height: 14px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 4px;
+  // border: none;
+  color: #727373;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #8a63bb !important;
+}
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #8a63bb;
+}
+
+// .modal-body{
+//   position: static !important;
+// }
+// .modal-content{
+//   position: static !important;
+// }
+// .modal-dialog{
+//   position: static !important;
+// }
+// .pdfViewer.removePageBorders .page {
+// margin: 0 !important;
+// }
+// .ng2-pdf-viewer-container{
+//   margin-left: -16px;
+// }
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 818px !important;
+    margin: 1.75rem auto;
+  }
+}
+
+// .mat-dialog-container#mat-dialog-0 {
+// background-color: #f8f8f8;
+// padding: 50px 30px;
+// border-radius: 24px;
+// }
+.mat-dialog-container {
+  // background-color: #f8f8f8;
+  padding: 50px 30px !important;
+  border-radius: 24px !important;
+}
+.mat-dialog-container#mat-dialog:nth-child(even) {
+  padding: 40px 35px;
+  border-radius: 25px;
+}
+.mat-dialog-container#mat-dialog:nth-child(odd) {
+  padding: 40px 35px;
+  border-radius: 25px;
+}
+.confirm-dialog-container .mat-dialog-container {
+  border-radius: 0.25em 0.25em 0.4em 0.4em;
+  padding: 0px;
+}
+.confirm-dialog-container .content-container {
+  margin: 5px 5px 15px 5px;
+  color: #8f9cb5;
+  display: flex;
+}
+.confirm-dialog-container #close-icon {
+  margin-left: auto;
+  order: 2;
+  font-weight: bolder;
+}
+.confirm-dialog-container #close-icon:hover {
+  cursor: pointer;
+}
+
+.confirm-dialog-container #no-button {
+  height: 50px;
+  width: 50%;
+  background-color: #fc7169;
+  color: white;
+  border-radius: 0px;
+}
+
+.confirm-dialog-container #yes-button {
+  height: 50px;
+  width: 50%;
+  background-color: #b6bece;
+  color: white;
+  border-radius: 0px;
+}
+
+.confirm-dialog-container span.content-span {
+  padding: 35px 16px;
+  text-align: center;
+  font-size: 20px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: inherit;
+  position: absolute;
+}
+.myPanelClass {
+  margin-top: 25px !important;
+  min-width: calc(100% + 20px) !important;
+  margin-left: 6px !important;
+}
+
+// .mat-calendar-header,
+// .mat-calendar-content {
+//   zoom: 0.85;
+//   font-family: "Monteserrat", sans-serif !important;
+// }
+
+// .mat-calendar {
+//   zoom: 1.05;
+// }
+.mat-select-arrow-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+  // background: red;
+  // border-radius: 20px;
+  position: absolute;
+}
+.mat-calendar-body-selected {
+  background-color: #38A3A5;
+  color: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgrey;
+}
+
+.mat-checkbox-ripple .mat-ripple-element {
+  background-color: black !important;
+}
+.special-date {
+  background-color: #b6bece;
+  border-radius: none;
+  width: 90%;
+  height: 90%;
+}
+.myPanelClass {
+  margin-top: 25px !important;
+  min-width: calc(100% + 20px) !important;
+  margin-left: 6px !important;
+}
+// .cdk-overlay-pane {
+//   margin-top: 30px !important;
+//   min-width: 200px !important;
+//   margin-left: 5px !important;
+// }
+
+.mat-button-toggle {
+  padding: 1px 15px !important;
+  margin: 8px 8px;
+  display: block;
+  background-color: #cfc9e4 !important;
+  border: none;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px !important;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  line-height: 28px !important;
+}
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+.mat-button-toggle-group-appearance-standard {
+  border: none !important;
+}
+// Sorting Arrow
+.mat-sort-header-arrow[style] {
+  // Hide default arrow stem
+  .mat-sort-header-stem {
+    display: none;
+  }
+  .mat-sort-header-indicator {
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+
+    // Hide default arrow as its composed of left, right and middle
+    .mat-sort-header-pointer-left,
+    .mat-sort-header-pointer-right,
+    .mat-sort-header-pointer-middle {
+      display: none;
+    }
+  }
+}
+// My custom ascending arrow
+[aria-sort="ascending"] {
+  ::ng-deep .mat-sort-header-arrow {
+    .mat-sort-header-indicator {
+      &::before {
+        content: " <i class=" fa fa-sort ">...</i>";
+        top: -1.6em;
+        position: absolute;
+      }
+    }
+  }
+}
+
+// My custom descending arrow
+[aria-sort="descending"] {
+  ::ng-deep .mat-sort-header-arrow {
+    .mat-sort-header-indicator {
+      &::before {
+        content: "<i class=" fa fa-sort ">...</i>";
+        top: -2.4em;
+        position: absolute;
+      }
+    }
+  }
+}
+// .popover-body{
+//   width: 800px !important;
+// }
+// .popover { max-width: 100% !important;}
+// .popover-body{
+//   width: 811px !important;
+//   background: #FFFFFF;
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+//   border-radius: 4px;
+// }
+
+
+.mat-button-toggle-checked {
+  color: #fff !important;
+  background: rgb(108, 43, 226) !important;
+  border-color: rgb(108, 43, 226) !important;
+}
+.mat-button-wrapper {
+  font-family: 'Lato',sans-serif !important;
+}
+.mat-calendar {
+  width: unset !important;
+  height: unset !important;
+  height: auto !important;
+  border-radius: 4px;
+  zoom: 1;
+  .mat-calendar-body {
+    .mat-calendar-body-label {
+      visibility: hidden;
+      padding: 0 !important;
+    }
+  }
+}
+
+// CSS for All Referral Table in Toggle menu component
+mat-form-field.statusViewedDropdown span.mat-form-field-label-wrapper label {
+  color: #45d839;
+  font-weight: 600;
+}
+
+mat-form-field.statusPendingDropdown span.mat-form-field-label-wrapper label {
+  color: #ffaf65;
+  font-weight: 600;
+}
+
+mat-form-field.statusHiredDropdown span.mat-form-field-label-wrapper label {
+  color: #68c5ed;
+  font-weight: 600;
+}
+
+mat-form-field.statusNotSelectedDropdown span.mat-form-field-label-wrapper label {
+  color: #cb3030;
+  font-weight: 600;
+}
+
+mat-form-field.statusOnHoldDropdown span.mat-form-field-label-wrapper label {
+  color: #ffaf65;
+  font-weight: 600;
+}
+.my-custom-class .popover-body {
+  width: 170px;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: #56bb4a;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #56bb4a;
+}
+// //pagination used in Forms & policy
+
+.page-number-container .ngx-pagination .current {
+  background-color: #38A3A5;
+  border-radius: 0.3rem;
+  .ng-star-inserted {
+    color: #ffffff;
+  }
+}
+.page-number-container .ngx-pagination span {
+  color: #38a3a5cb;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+.page-number-container .ngx-pagination a {
+  color: #33898a;
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  margin: 0.3rem;
+}
+
+//timesheet
+#mat-form-field-container {
+  .mat-form-field-flex {
+    width: 14rem;
+    margin: 0rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .mat-date-range-input-start-wrapper {
+    overflow: inherit;
+  }
+}
+#date-day-delect-container {
+  .mat-tab-label {
+      height: 4rem;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+  
+  
+    .mat-tab-label .mat-tab-label-content {
+      flex-direction: column;
+    }
+  }
+  
+  .mat-tab-group.mat-primary .mat-ink-bar,
+  .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #33898a;
+  }
+
+//dialog for ADD TASK component in Timesheet
+.task-dialog-container mat-dialog-container {
+  width: 50rem;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.600);
+}
+
+//referral component
+
+.input-date {
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    margin: 0rem;
+    border-radius: 0.3rem;
+    padding-top: 0.3rem;
+  }
+
+  .mat-form-field-wrapper {
+    padding: 0rem;
+  }
+}
+
+//employee directory
+.dropdown-wrapper {
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    margin: 0rem;
+    border-radius: 0.4rem;
+    padding-top: 0.5rem;
+  }
+
+  .mat-form-field-wrapper {
+    padding: 0rem;
+  }
+}
+
+.search-wrapper .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0rem;
+}
+
+//feedback dropdown
+#feedback-status-dropdown {
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 0.4rem;
+    width: 9rem;
+    margin: 0rem;
+    padding: 0.3rem 0.5rem;
+    border: none;
+  }
+
+  .mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+    all: unset;
+  }
+
+  .mat-form-field-wrapper {
+    padding: 0rem;
+  }
+
+  .mat-form-field-infix {
+    border: none;
+    padding: 0rem;
+  }
+
+  .statusAcknowledged {
+    .mat-select-placeholder {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      color: #07C80B;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+      background: #DFF7E0;
+    }
+  }
+
+  .statusNotAcknowledged {
+    .mat-select-placeholder {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      color: #FCC74A;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+      background: #FCF0D4;
+    }
+  }
+}
+///sidebar scroll
+#sidebar-sroll-wrapper {
+
+  .sidebar-container,
+  .sidebar-wrapper:hover {
+    visibility: visible;
+  }
+}
+//reimbursement approver dialog
+.approve-dialog-container mat-dialog-container {
+  background: #fff;
+}
+
+/* based on angular-toastr css https://github.com/Foxandxss/angular-toastr/blob/cb508fe6801d6b288d3afc525bb40fee1b101650/dist/angular-toastr.css */
+
+/* position */
+.toast-center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.toast-top-left {
+  top: 12px;
+  left: 12px;
+}
+.toast-top-right {
+  top: 12px;
+  right: 12px;
+}
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+/* toast styles */
+.toast-title {
+  font-weight: bold;
+}
+.toast-message {
+  word-wrap: break-word;
+}
+.toast-message a,
+.toast-message label {
+  color: #FFFFFF;
+}
+.toast-message a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 #ffffff;
+  /* opacity: 0.8; */
+}
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+}
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.toast-container {
+  pointer-events: none;
+  position: fixed;
+  z-index: 999999;
+}
+.toast-container * {
+  box-sizing: border-box;
+}
+.toast-container .ngx-toastr {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  box-shadow: 0 0 12px #999999;
+  color: #FFFFFF;
+}
+.toast-container .ngx-toastr:hover {
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  cursor: pointer;
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/info-circle.svg */
+.toast-info {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTI1NiA4QzExOS4wNDMgOCA4IDExOS4wODMgOCAyNTZjMCAxMzYuOTk3IDExMS4wNDMgMjQ4IDI0OCAyNDhzMjQ4LTExMS4wMDMgMjQ4LTI0OEM1MDQgMTE5LjA4MyAzOTIuOTU3IDggMjU2IDh6bTAgMTEwYzIzLjE5NiAwIDQyIDE4LjgwNCA0MiA0MnMtMTguODA0IDQyLTQyIDQyLTQyLTE4LjgwNC00Mi00MiAxOC44MDQtNDIgNDItNDJ6bTU2IDI1NGMwIDYuNjI3LTUuMzczIDEyLTEyIDEyaC04OGMtNi42MjcgMC0xMi01LjM3My0xMi0xMnYtMjRjMC02LjYyNyA1LjM3My0xMiAxMi0xMmgxMnYtNjRoLTEyYy02LjYyNyAwLTEyLTUuMzczLTEyLTEydi0yNGMwLTYuNjI3IDUuMzczLTEyIDEyLTEyaDY0YzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MTAwaDEyYzYuNjI3IDAgMTIgNS4zNzMgMTIgMTJ2MjR6Jy8+PC9zdmc+");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/times-circle.svg */
+.toast-error {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTI1NiA4QzExOSA4IDggMTE5IDggMjU2czExMSAyNDggMjQ4IDI0OCAyNDgtMTExIDI0OC0yNDhTMzkzIDggMjU2IDh6bTEyMS42IDMxMy4xYzQuNyA0LjcgNC43IDEyLjMgMCAxN0wzMzggMzc3LjZjLTQuNyA0LjctMTIuMyA0LjctMTcgMEwyNTYgMzEybC02NS4xIDY1LjZjLTQuNyA0LjctMTIuMyA0LjctMTcgMEwxMzQuNCAzMzhjLTQuNy00LjctNC43LTEyLjMgMC0xN2w2NS42LTY1LTY1LjYtNjUuMWMtNC43LTQuNy00LjctMTIuMyAwLTE3bDM5LjYtMzkuNmM0LjctNC43IDEyLjMtNC43IDE3IDBsNjUgNjUuNyA2NS4xLTY1LjZjNC43LTQuNyAxMi4zLTQuNyAxNyAwbDM5LjYgMzkuNmM0LjcgNC43IDQuNyAxMi4zIDAgMTdMMzEyIDI1Nmw2NS42IDY1LjF6Jy8+PC9zdmc+");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/check.svg */
+.toast-success {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MTIgNTEyJyB3aWR0aD0nNTEyJyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTE3My44OTggNDM5LjQwNGwtMTY2LjQtMTY2LjRjLTkuOTk3LTkuOTk3LTkuOTk3LTI2LjIwNiAwLTM2LjIwNGwzNi4yMDMtMzYuMjA0YzkuOTk3LTkuOTk4IDI2LjIwNy05Ljk5OCAzNi4yMDQgMEwxOTIgMzEyLjY5IDQzMi4wOTUgNzIuNTk2YzkuOTk3LTkuOTk3IDI2LjIwNy05Ljk5NyAzNi4yMDQgMGwzNi4yMDMgMzYuMjA0YzkuOTk3IDkuOTk3IDkuOTk3IDI2LjIwNiAwIDM2LjIwNGwtMjk0LjQgMjk0LjQwMWMtOS45OTggOS45OTctMjYuMjA3IDkuOTk3LTM2LjIwNC0uMDAxeicvPjwvc3ZnPg==");
+}
+/* https://github.com/FortAwesome/Font-Awesome-Pro/blob/master/advanced-options/raw-svg/regular/exclamation-triangle.svg */
+.toast-warning {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1NzYgNTEyJyB3aWR0aD0nNTc2JyBoZWlnaHQ9JzUxMic+PHBhdGggZmlsbD0ncmdiKDI1NSwyNTUsMjU1KScgZD0nTTU2OS41MTcgNDQwLjAxM0M1ODcuOTc1IDQ3Mi4wMDcgNTY0LjgwNiA1MTIgNTI3Ljk0IDUxMkg0OC4wNTRjLTM2LjkzNyAwLTU5Ljk5OS00MC4wNTUtNDEuNTc3LTcxLjk4N0wyNDYuNDIzIDIzLjk4NWMxOC40NjctMzIuMDA5IDY0LjcyLTMxLjk1MSA4My4xNTQgMGwyMzkuOTQgNDE2LjAyOHpNMjg4IDM1NGMtMjUuNDA1IDAtNDYgMjAuNTk1LTQ2IDQ2czIwLjU5NSA0NiA0NiA0NiA0Ni0yMC41OTUgNDYtNDYtMjAuNTk1LTQ2LTQ2LTQ2em0tNDMuNjczLTE2NS4zNDZsNy40MTggMTM2Yy4zNDcgNi4zNjQgNS42MDkgMTEuMzQ2IDExLjk4MiAxMS4zNDZoNDguNTQ2YzYuMzczIDAgMTEuNjM1LTQuOTgyIDExLjk4Mi0xMS4zNDZsNy40MTgtMTM2Yy4zNzUtNi44NzQtNS4wOTgtMTIuNjU0LTExLjk4Mi0xMi42NTRoLTYzLjM4M2MtNi44ODQgMC0xMi4zNTYgNS43OC0xMS45ODEgMTIuNjU0eicvPjwvc3ZnPg==");
+}
+.toast-container.toast-top-center .ngx-toastr,
+.toast-container.toast-bottom-center .ngx-toastr {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.toast-container.toast-top-full-width .ngx-toastr,
+.toast-container.toast-bottom-full-width .ngx-toastr {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ngx-toastr {
+  background-color: #030303;
+  pointer-events: auto;
+}
+.toast-success {
+  background-color: #51A351;
+}
+.toast-error {
+  background-color: #BD362F;
+}
+.toast-info {
+  background-color: #2F96B4;
+}
+.toast-warning {
+  background-color: #F89406;
+}
+.toast-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.4;
+}
+/* Responsive Design */
+@media all and (max-width: 240px) {
+  .toast-container .ngx-toastr.div {
+    padding: 8px 8px 8px 50px;
+    width: 11em;
+  }
+  .toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 241px) and (max-width: 480px) {
+  .toast-container .ngx-toastr.div {
+    padding: 8px 8px 8px 50px;
+    width: 18em;
+  }
+  .toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .toast-container .ngx-toastr.div {
+    padding: 15px 15px 15px 50px;
+    width: 25em;
+  }
+}

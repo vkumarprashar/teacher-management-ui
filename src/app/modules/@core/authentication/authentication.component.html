@@ -1,0 +1,60 @@
+<div class="main">
+    <div class="login-page-container">
+        <div class="left">
+
+            <div class="left-inner">
+
+                <div class="img">
+                    <img mat-card-avatar src="../../../../assets/login/login.jpeg" alt="Logo">
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <div class="description">
+                    <div class="head">
+                        <p class="heading "> <span>Welcome To TMT</span> </p>
+                        <p class="heading-description">Please login to your Account</p>
+                    </div>
+                    <div class="login-sso-btn">
+                        <div class="login-sso-button-container">
+                            <div class="inputs" [formGroup]="loginForm">
+                                <div class="input-wrapper col-xl-4">
+                                    <label>Username</label>
+                                    <input type="text" placeholder="Username" formControlName="username"
+                                        name="username" />
+                                    <div class="error-message">
+                                        <span class="text-danger" *ngIf="
+                              loginForm.controls['username'].hasError(
+                                'required'
+                              ) && loginForm.controls['username'].touched
+                            ">Username is required</span>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper col-xl-4">
+                                    <label>Password</label>
+                                    <input type="password" placeholder="password" formControlName="password"
+                                        name="password" />
+                                    <div class="error-message">
+                                        <span class="text-danger" *ngIf="
+                              loginForm.controls['password'].hasError(
+                                'required'
+                              ) && loginForm.controls['password'].hasError('minlength')
+                              $$ loginForm.controls['password'].touched
+                            ">Username is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>
+                                <button (click)="login()">Login</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
