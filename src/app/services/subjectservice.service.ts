@@ -14,7 +14,7 @@ export class SubjectserviceService {
     constructor(private http: HttpClient) { }
   
     addNewSubject(body: any) {
-      this.baseUrl = "http://localhost:8080/api/subjects";
+      this.baseUrl = "http://143.244.130.119:8080/api/subjects";
       let header = new HttpHeaders();
       header.append('accept', 'application/json');
       return this.http.post(this.baseUrl , body, {
@@ -23,7 +23,7 @@ export class SubjectserviceService {
     }
 
     addNewTeacher(body: any) {
-      this.baseUrl ="http://localhost:8080/api/teachers";
+      this.baseUrl ="http://143.244.130.119:8080/api/teachers";
       let header = new HttpHeaders();
       header.append('accept', 'application/json');
       return this.http.post(this.baseUrl , body, {
@@ -32,7 +32,7 @@ export class SubjectserviceService {
     }
 
     addNewSchool(body: any) {
-      this.baseUrl ="http://localhost:8080/api/schools";
+      this.baseUrl ="http://143.244.130.119:8080/api/schools";
       let header = new HttpHeaders();
       header.append('accept', 'application/json');
       return this.http.post(this.baseUrl , body, {
@@ -40,27 +40,27 @@ export class SubjectserviceService {
       });
     }
     getschools() {
-      this.baseUrl ="http://localhost:8080/api/schools";
+      this.baseUrl ="http://143.244.130.119:8080/api/schools";
       return this.http.get(this.baseUrl);
     }
 
     getsubjects() {
-      this.baseUrl ="http://localhost:8080/api/subjects";
+      this.baseUrl ="http://143.244.130.119:8080/api/subjects";
       return this.http.get(this.baseUrl);
     }
 
     getteachers() {
-      this.baseUrl ="http://localhost:8080/api/teachers";
+      this.baseUrl ="http://143.244.130.119:8080/api/teachers";
       return this.http.get(this.baseUrl);
     }
 
     getClasses() {
-      this.baseUrl ="http://localhost:8080/api/scheduled-classes";
+      this.baseUrl ="http://143.244.130.119:8080/api/scheduled-classes";
       return this.http.get(this.baseUrl);
     }
 
     addNewClass(body:any){
-      this.baseUrl = "http://localhost:8080/api/scheduled-classes";
+      this.baseUrl = "http://143.244.130.119:8080/api/scheduled-classes";
       let header = new HttpHeaders();
       header.append('accept', 'application/json');
       return this.http.post(this.baseUrl , body, {
