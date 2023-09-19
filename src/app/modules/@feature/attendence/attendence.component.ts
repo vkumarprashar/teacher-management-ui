@@ -34,13 +34,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class AttendenceComponent implements OnInit {
 
-  displayedColumns: string[] = ['schoolName', 'teacherName', 'startTime', 'EndTime', 'Date', 'subject', 'status', 'approve'];
+  displayedColumns: string[] = ['schoolName', 'teacherName', 'startTime', 'EndTime', 'subject', 'status', 'approve'];
   dataSource: any = new MatTableDataSource([]);
   constructor( public fb: FormBuilder, public subjectservice : SubjectserviceService, public toastrServiceService: ToastrServiceService,
     public dialogservice:DialogService){
   }
   ngOnInit(){
-    this.dataSource = ELEMENT_DATA
     this.subjectservice.getClasses().subscribe((data : any) => {
       this.dataSource.data = data;
   
